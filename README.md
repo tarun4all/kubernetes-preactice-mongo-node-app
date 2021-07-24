@@ -12,3 +12,10 @@ to generate use "echo -n 'username' | base64"
 use `kubectl apply -f mongo-secret.yaml` to generate secret the ref in mongo.yaml
 
 now apply with kubectl apply -f mongo.yaml
+
+same for mongo-express.yaml and configmap
+
+after all applied.
+
+To bind local IP of mongo-express-service cluster
+Use: minikube service mongo-express-service
